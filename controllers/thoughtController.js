@@ -34,5 +34,9 @@ module.exports = {
         )
             .then(thoughtData => res.json(thoughtData))
     },
+    removeThought(req, res) {
+        Thought.findOneAndDelete({ _id: req.params.thoughtId })
+            .then(() => res.json({ message: "Thought deleted." }))
+    },
 
 }
