@@ -38,5 +38,18 @@ module.exports = {
         Thought.findOneAndDelete({ _id: req.params.thoughtId })
             .then(() => res.json({ message: "Thought deleted." }))
     },
+    addReaction(req, res) {
+        Thought.findOneAndUpdate(
+            { _id: req.params.thoughtId},
+            { $addToSet: { reactions: [
+                {
+                    reactionBody: req.body.reactionBody,
+                    username: req.body.username
+                }
+            ]}},
+            { new: true }
+        )
+            .then(reactionData => res.json(reactionData))
+    },
 
 }
