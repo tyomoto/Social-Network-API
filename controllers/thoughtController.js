@@ -25,5 +25,14 @@ module.exports = {
             })
             .then((userData) => res.json(userData))
     },
+    updateThought(req, res) {
+        Thought.findByIdAndUpdate(
+            { _id: req.params.thoughtId },
+            { thoughText: req.params.thoughtText,
+            username: req.params.username},
+            { new: true }
+        )
+            .then(thoughtData => res.json(thoughtData))
+    },
 
 }
