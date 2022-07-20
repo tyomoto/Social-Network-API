@@ -2,7 +2,7 @@
 ## Module 18 Challenge
 
 ## Description
-
+The goal of this challenge was to build a social network api that allows for users to share their thoughts, react to friends' thoughts and create a friends list. This was all to be done using Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
 ## User Story
 AS A social media startup
@@ -31,8 +31,8 @@ npm start
 ```
 
 ## Video Walkthrough
-This link will take you to the video walkthrough and demonstration in how to use this team generator as well as the npm tests passing.
-[README Walkthrough](https://drive.google.com/file/d/1ka9eKqoDNgDeFVBlbMuuov7mO4NehYtY/view)
+This link will take you to the video walkthrough and demonstration on all the functioning routes.
+[Social Network API Walkthrough](https://drive.google.com/file/d/1ahO8kIyFhdPhncmRxNy0ReqAhRUbPrgx/view)
 
 ## Website
 This [link](https://github.com/tyomoto/special-fortnight) will take you to the code repository on github.
